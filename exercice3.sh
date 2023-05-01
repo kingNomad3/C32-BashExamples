@@ -9,12 +9,12 @@ done
 }
 
 
-for((i=0;i<10;i++))
+for ((i=0;i<10;i++))
 do
         clear 
         faireEspace $i
-        
-        if [[$i -lt 9]]
+
+        if [[ $i -lt 9 ]]
         then
             echo "@"
         else
