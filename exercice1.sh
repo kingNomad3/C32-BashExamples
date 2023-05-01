@@ -12,10 +12,10 @@
 # affichier a l ecran si le mot exite ou pas
 
 read -p "Entrez un mot: " mot
-resultat =`wget -qO - http://dictionary.objectif8.com/exists.php?word=$mot`
+resultat=`wget -qO - http://dictionary.objectif8.com/exists.php?word=$mot`
 
 
-if[[ $resultat = true ]]
+if [[ $resultat = 1 ]]
 then 
     echo "le mot exist"
 

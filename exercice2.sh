@@ -7,9 +7,25 @@
 # ou appelez ./execice2.sh (choix d)
 # a chaqe debut de boucle afficber le menu
 
-read -p "Entrez votre choix: " choix
+afficherMenu(){
+    clear
+    echo "---------"
+    echo " Menu"
+    echo "-------------"
+    echo "Appeler exercice 2(d)"
+    echo "Quitter(q)"
+    
+}
 
+choix=
 
-while[[ $resultat = o ]]
+while [[ $choix != q ]]
 do 
-read -p "choix : " resultat
+    afficherMenu
+    read -p "Entrez votre choix: " choix
+    if [[ $choix = d ]]
+    then
+        ./exercice1.sh
+    fi
+done
+
