@@ -10,7 +10,7 @@ declare -i age=33
 # -r donne une constante
 declare -r CHEMIN=/bin
 
-# $0 donn e le premier script
+# $0 donne le fichier courant 
 echo "Nom script" $0
 
 # $# veut dire combien on passe  de paramettre
